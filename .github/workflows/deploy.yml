@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies
-        run: npm ci
+        run: npm ci install
       - name: Build with Vite
         run: npm run build
       - name: Upload artifact
