@@ -1,0 +1,6 @@
+{
+  "name": "센트럴 기숙 학원 인트라넷",
+  "description": "AI 챗봇 캐릭터 및 세계관 설정 열람 페이지",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
