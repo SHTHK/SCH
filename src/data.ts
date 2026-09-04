@@ -31,8 +31,8 @@ export const characters: Character[] = [
     physical: 67,
     defense: 50,
     magic: 0,
-    squareImageUrl: "MK_TN.webp",
-    profileImageUrl: "MK_cowboyshot.webp",
+    squareImageUrl: "/MK_TN.webp",
+    profileImageUrl: "/MK_cowboyshot.webp",
   },
   {
     id: "sol",
@@ -46,8 +46,8 @@ export const characters: Character[] = [
     physical: 60,
     defense: 30,
     magic: 25,
-    squareImageUrl: "SO_TN.webp",
-    profileImageUrl: "SO_cowboyshot.webp",
+    squareImageUrl: "/SO_TN.webp",
+    profileImageUrl: "/SO_cowboyshot.webp",
   },
   {
     id: "ventus",
@@ -61,8 +61,8 @@ export const characters: Character[] = [
     physical: 24,
     defense: 36,
     magic: 65,
-    squareImageUrl: "BT_TN.webp",
-    profileImageUrl: "BT_cowboyshot.webp",
+    squareImageUrl: "/BT_TN.webp",
+    profileImageUrl: "/BT_cowboyshot.webp",
   },
   // 상급반
   {
@@ -77,8 +77,8 @@ export const characters: Character[] = [
     physical: 55,
     defense: 50,
     magic: 0,
-    squareImageUrl: "MY_TN.webp",
-    profileImageUrl: "MY_cowboyshot.webp",
+    squareImageUrl: "/MY_TN.webp",
+    profileImageUrl: "/MY_cowboyshot.webp",
   },
   {
     id: "pivot",
@@ -92,8 +92,8 @@ export const characters: Character[] = [
     physical: 22,
     defense: 43,
     magic: 55,
-    squareImageUrl: "PV_TN.webp",
-    profileImageUrl: "PV_cowboyshot.webp",
+    squareImageUrl: "/PV_TN.webp",
+    profileImageUrl: "/PV_cowboyshot.webp",
   },
   {
     id: "amon",
@@ -107,8 +107,8 @@ export const characters: Character[] = [
     physical: 5,
     defense: 25,
     magic: 70,
-    squareImageUrl: "AM_TN.webp",
-    profileImageUrl: "AM_cowboyshot.webp",
+    squareImageUrl: "/AM_TN.webp",
+    profileImageUrl: "/AM_cowboyshot.webp",
   },
   {
     id: "jane",
@@ -122,8 +122,8 @@ export const characters: Character[] = [
     physical: 25,
     defense: 55,
     magic: 35,
-    squareImageUrl: "JN_TN.webp",
-    profileImageUrl: "JN_cowboyshot.webp",
+    squareImageUrl: "/JN_TN.webp",
+    profileImageUrl: "/JN_cowboyshot.webp",
   },
   // 중급반
   {
@@ -138,8 +138,8 @@ export const characters: Character[] = [
     physical: 30,
     defense: 35,
     magic: 48,
-    squareImageUrl: "KV_TN.webp",
-    profileImageUrl: "KV_cowboyshot.webp",
+    squareImageUrl: "/KV_TN.webp",
+    profileImageUrl: "/KV_cowboyshot.webp",
   },
   {
     id: "lavender",
@@ -153,8 +153,8 @@ export const characters: Character[] = [
     physical: 13,
     defense: 25,
     magic: 47,
-    squareImageUrl: "LV_TN.webp",
-    profileImageUrl: "LV_cowboyshot.webp",
+    squareImageUrl: "/LV_TN.webp",
+    profileImageUrl: "/LV_cowboyshot.webp",
   },
   {
     id: "acus",
@@ -168,8 +168,8 @@ export const characters: Character[] = [
     physical: 37,
     defense: 49,
     magic: 5,
-    squareImageUrl: "AK_TN.webp",
-    profileImageUrl: "AK_cowboyshot.webp",
+    squareImageUrl: "/AK_TN.webp",
+    profileImageUrl: "/AK_cowboyshot.webp",
   },
   {
     id: "dira",
@@ -183,8 +183,8 @@ export const characters: Character[] = [
     physical: 15,
     defense: 20,
     magic: 46,
-    squareImageUrl: "DR_TN.webp",
-    profileImageUrl: "DR_cowboyshot.webp",
+    squareImageUrl: "/DR_TN.webp",
+    profileImageUrl: "/DR_cowboyshot.webp",
   },
   // 초급반
   {
@@ -199,8 +199,8 @@ export const characters: Character[] = [
     physical: 10,
     defense: 15,
     magic: 35,
-    squareImageUrl: "VV_TN.webp",
-    profileImageUrl: "VV_cowboyshot.webp",
+    squareImageUrl: "/VV_TN.webp",
+    profileImageUrl: "/VV_cowboyshot.webp",
   },
   {
     id: "luna",
@@ -214,8 +214,8 @@ export const characters: Character[] = [
     physical: 15,
     defense: 20,
     magic: 30,
-    squareImageUrl: "LN_TN.webp",
-    profileImageUrl: "LN_cowboyshot.webp",
+    squareImageUrl: "/LN_TN.webp",
+    profileImageUrl: "/LN_cowboyshot.webp",
   },
   {
     id: "rohi",
@@ -229,8 +229,8 @@ export const characters: Character[] = [
     physical: 30,
     defense: 30,
     magic: 15,
-    squareImageUrl: "RH_TN.webp",
-    profileImageUrl: "RH_cowboyshot.webp",
+    squareImageUrl: "/RH_TN.webp",
+    profileImageUrl: "/RH_cowboyshot.webp",
   },
   {
     id: "jurang",
@@ -244,8 +244,8 @@ export const characters: Character[] = [
     physical: 35,
     defense: 35,
     magic: 5,
-    squareImageUrl: "JR_TN.webp",
-    profileImageUrl: "JR_cowboyshot.webp",
+    squareImageUrl: "/JR_TN.webp",
+    profileImageUrl: "J/R_cowboyshot.webp",
   },
   // 교사
   {
@@ -260,8 +260,8 @@ export const characters: Character[] = [
     physical: 45,
     defense: 67,
     magic: 30,
-    squareImageUrl: "CC_TN.webp",
-    profileImageUrl: "CC_cowboyshot.webp",
+    squareImageUrl: "/CC_TN.webp",
+    profileImageUrl: "/CC_cowboyshot.webp",
   },
   {
     id: "typhon",
@@ -275,8 +275,8 @@ export const characters: Character[] = [
     physical: 66,
     defense: 44,
     magic: 25,
-    squareImageUrl: "TP_TN.webp",
-    profileImageUrl: "TP_cowboyshot.webp",
+    squareImageUrl: "/TP_TN.webp",
+    profileImageUrl: "/TP_cowboyshot.webp",
   },
   {
     id: "berry",
@@ -290,8 +290,8 @@ export const characters: Character[] = [
     physical: 25,
     defense: 43,
     magic: 63,
-    squareImageUrl: "BR_TN.webp",
-    profileImageUrl: "BR_cowboyshot.webp",
+    squareImageUrl: "/BR_TN.webp",
+    profileImageUrl: "/BR_cowboyshot.webp",
   },
   {
     id: "ino",
@@ -305,8 +305,8 @@ export const characters: Character[] = [
     physical: 40,
     defense: 40,
     magic: 71,
-    squareImageUrl: "IN_TN.webp",
-    profileImageUrl: "IN_cowboyshot.webp",
+    squareImageUrl: "/IN_TN.webp",
+    profileImageUrl: "/IN_cowboyshot.webp",
   },
 ];
 
