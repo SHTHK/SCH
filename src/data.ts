@@ -245,7 +245,7 @@ export const characters: Character[] = [
     defense: 35,
     magic: 5,
     squareImageUrl: "/JR_TN.webp",
-    profileImageUrl: "J/R_cowboyshot.webp",
+    profileImageUrl: "/JR_cowboyshot.webp",
   },
   // 교사
   {
