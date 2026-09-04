@@ -10,13 +10,12 @@ export const characters: Character[] = [
     race: "악마",
     className: "인형사",
     group: "엘리트반",
-    info: "조용하지만 어딘가 4차원스러운 소녀. 눈치가 조금 없는 편이다. 평화를 추구하며, 사회에 평탄히 섞여 살고 싶어한다. 재킷과 마스크는 좀처럼 벗는 일이 없다.",
-    secretInfo: "마왕군 후예. 인간인 척하고 있지만 악마다. 클래스 또한 자칭 인형사지만 실상은 네크로맨서. 조상 마왕군의 시체를 깨워 조종한다. 조상이 마왕측에 있었기 때문에 혐오한다. 그런 그들의 시체를 이용하는 걸 일종의 조롱으로 생각하고 있는 모양이다.",
+    info: "INTP·9w1·중립선·조용한 4차원·눈치없음·평화주의" + "\n\n" + "베이지 단발·적안·녹색 후드재킷·흰 원피스·악마날개/꼬리(숨김)·검은마스크",
+    secretInfo: "인간인척하는 마왕군 후예. 사회에 평탄히 섞여 살고 싶어함. 자칭 인형사지만 실상은 네크로맨서(조상 마왕군 시체 조종). 조상을 혐오함.",
     physical: 40,
     defense: 66,
     magic: 40,
-    squareImageUrl: "/HM_TN.webp",
-    profileImageUrl: "/HM_cowboyshot.webp",
+    imageUrl: "",
   },
   {
     id: "miki",
@@ -26,13 +25,12 @@ export const characters: Character[] = [
     race: "인간",
     className: "검사",
     group: "엘리트반",
-    info: "재수 없고, 남을 깔보는 성격. 엄격한 엘리트 가문의 장남이자 미야의 오빠이다. 동생과는 사이가 좋지만, 부모와 사이가 안 좋은 듯하다.",
-    secretInfo: "사실은 다정하고 차분한 성격. 미야에게 가문의 상속을 넘겨주기 위해 가주에 부적절한 성격을 연기중이다.",
+    info: "ENTP·7w8·혼돈선(겉)메스가키(속)다정·차분" + "\n\n" + "백발·흑안·백정장·작은 키·앳된 미모",
+    secretInfo: "엄격한 엘리트 가문 장남이자 미야의 오빠. 미야를 매우 아끼며, 미야에게 가문의 상속을 넘기기 위해 가주에 부적절한 성격을 연기중임. 부모를 혐오함.",
     physical: 67,
     defense: 50,
     magic: 0,
-    squareImageUrl: "MK_TN.webp",
-    profileImageUrl: "MK_cowboyshot.webp",
+    imageUrl: "",
   },
   {
     id: "sol",
@@ -42,12 +40,11 @@ export const characters: Character[] = [
     race: "섀도우",
     className: "암살자",
     group: "엘리트반",
-    info: "쿨한 누님",
+    info: "ISTP·8w9·완전중립·쿨한 누님·뒤끝 없음·터프" + "\n\n" + "큰 키·그림자로 된 몸·완전히 어두운 얼굴에 빛나는 눈만 보임·흑장발·적안·검은 코트·간단한 옷차림",
     physical: 60,
     defense: 30,
     magic: 25,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   {
     id: "ventus",
@@ -61,8 +58,7 @@ export const characters: Character[] = [
     physical: 24,
     defense: 36,
     magic: 65,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   // 상급반
   {
@@ -77,8 +73,7 @@ export const characters: Character[] = [
     physical: 55,
     defense: 50,
     magic: 0,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   {
     id: "pivot",
@@ -92,8 +87,7 @@ export const characters: Character[] = [
     physical: 22,
     defense: 43,
     magic: 55,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   {
     id: "amon",
@@ -107,8 +101,7 @@ export const characters: Character[] = [
     physical: 5,
     defense: 25,
     magic: 70,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   {
     id: "jane",
@@ -122,8 +115,7 @@ export const characters: Character[] = [
     physical: 25,
     defense: 55,
     magic: 35,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   // 중급반
   {
@@ -138,8 +130,7 @@ export const characters: Character[] = [
     physical: 30,
     defense: 35,
     magic: 48,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   {
     id: "lavender",
@@ -153,8 +144,7 @@ export const characters: Character[] = [
     physical: 13,
     defense: 25,
     magic: 47,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   {
     id: "acus",
@@ -168,8 +158,7 @@ export const characters: Character[] = [
     physical: 37,
     defense: 49,
     magic: 5,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   {
     id: "dira",
@@ -183,8 +172,7 @@ export const characters: Character[] = [
     physical: 15,
     defense: 20,
     magic: 46,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   // 초급반
   {
@@ -199,8 +187,7 @@ export const characters: Character[] = [
     physical: 10,
     defense: 15,
     magic: 35,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   {
     id: "luna",
@@ -214,8 +201,7 @@ export const characters: Character[] = [
     physical: 15,
     defense: 20,
     magic: 30,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   {
     id: "rohi",
@@ -229,8 +215,7 @@ export const characters: Character[] = [
     physical: 30,
     defense: 30,
     magic: 15,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   {
     id: "jurang",
@@ -244,8 +229,7 @@ export const characters: Character[] = [
     physical: 35,
     defense: 35,
     magic: 5,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   // 교사
   {
@@ -260,8 +244,7 @@ export const characters: Character[] = [
     physical: 45,
     defense: 67,
     magic: 30,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   {
     id: "typhon",
@@ -275,8 +258,7 @@ export const characters: Character[] = [
     physical: 66,
     defense: 44,
     magic: 25,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   {
     id: "berry",
@@ -290,8 +272,7 @@ export const characters: Character[] = [
     physical: 25,
     defense: 43,
     magic: 63,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
   {
     id: "ino",
@@ -305,8 +286,7 @@ export const characters: Character[] = [
     physical: 40,
     defense: 40,
     magic: 71,
-    squareImageUrl: "",
-    profileImageUrl: "",
+    imageUrl: "",
   },
 ];
 
