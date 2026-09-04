@@ -9,10 +9,10 @@ export function Home() {
           <GraduationCap className="w-12 h-12 text-amber-400" />
         </div>
         <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
-          센트럴 기숙 학원 통합 인트라넷
+          센트럴 기숙 학원
         </h1>
         <p className="text-lg text-slate-600">
-          학원 교직원 및 학생 열람용 설정 데이터베이스입니다. 열람하고자 하는 카테고리를 선택해주십시오.
+          우리 센트럴 기숙 학원은 모든 학생들을 환영합니다.
         </p>
       </div>
 
@@ -29,7 +29,7 @@ export function Home() {
           </div>
           <h2 className="text-2xl font-bold text-slate-900 mb-2">캐릭터 설정</h2>
           <p className="text-center text-slate-500">
-            학생 및 교직원의 인적 사항, 스탯 기록 및 개인 프로필을 열람합니다.
+            학생 및 교직원의 인적 사항 열람.
           </p>
         </Link>
 
@@ -45,7 +45,7 @@ export function Home() {
           </div>
           <h2 className="text-2xl font-bold text-slate-900 mb-2">세계관 설정</h2>
           <p className="text-center text-slate-500">
-            센트럴 학원 및 배경 세계관의 기본 지침 및 설정 자료를 열람합니다.
+            세계관 설정 자료 열람.
           </p>
         </Link>
 
@@ -61,7 +61,7 @@ export function Home() {
           </div>
           <h2 className="text-2xl font-bold text-slate-900 mb-2">학원 일정</h2>
           <p className="text-center text-slate-500">
-            연간 진행되는 주요 학사 일정과 행사, 평가 등의 항목을 열람합니다.
+            연간 진행되는 주요 학사 일정과 행사 일정 열람.
           </p>
         </Link>
       </div>
