@@ -17,12 +17,12 @@ export function Layout() {
           <nav className="flex gap-1 sm:gap-4 text-sm font-medium">
             <Link to="/characters" className="flex items-center gap-1.5 px-3 py-2 rounded-md hover:bg-slate-800 transition-colors">
               <Users className="w-4 h-4" />
-              <span className="hidden sm:inline">학생/교사 인적사항</span>
+              <span className="hidden sm:inline">캐릭터 프로필</span>
               <span className="sm:hidden">인물</span>
             </Link>
             <Link to="/world" className="flex items-center gap-1.5 px-3 py-2 rounded-md hover:bg-slate-800 transition-colors">
               <Database className="w-4 h-4" />
-              <span className="hidden sm:inline">통합 설정 데이터</span>
+              <span className="hidden sm:inline">세계관 설정</span>
               <span className="sm:hidden">세계관</span>
             </Link>
             <Link to="/schedule" className="flex items-center gap-1.5 px-3 py-2 rounded-md hover:bg-slate-800 transition-colors">
