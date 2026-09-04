@@ -12,7 +12,7 @@ export function Characters() {
           <Users className="w-8 h-8 text-blue-600" />
           학생 및 교직원 명부
         </h1>
-        <p className="mt-2 text-slate-500">인물 프로필을 선택하여 상세 인적 사항을 열람하십시오.</p>
+        <p className="mt-2 text-slate-500">캐릭터의 프로필입니다.</p>
       </div>
 
       <div className="space-y-12">
