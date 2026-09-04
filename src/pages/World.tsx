@@ -7,9 +7,9 @@ export function World() {
       <div className="border-b-2 border-slate-200 pb-6 mb-8">
         <h1 className="text-3xl font-extrabold text-slate-900 flex items-center gap-3">
           <Shield className="w-8 h-8 text-indigo-600" />
-          통합 설정 데이터베이스
+          세계관 설정
         </h1>
-        <p className="mt-2 text-slate-500">세계관 및 학원 규정 열람서</p>
+        <p className="mt-2 text-slate-500">스토리의 배경이 되는 설정입니다.</p>
       </div>
 
       <div className="grid gap-6">
