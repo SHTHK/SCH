@@ -83,13 +83,6 @@ export function CharacterDetail() {
               className="w-full h-full object-cover"
             />
             
-            {/* Grade Badge overlay on image */}
-            <div className="absolute top-4 left-4">
-              <div className={`w-12 h-12 rounded-full ${gradeBg} flex items-center justify-center border-2 border-white shadow-md`}>
-                <span className={`text-xl font-extrabold ${gradeColor}`}>{grade}</span>
-              </div>
-            </div>
-            
             {/* Group Badge */}
             <div className="absolute top-4 right-4">
               <span className="px-3 py-1 bg-slate-900/80 text-white text-xs font-bold rounded-full backdrop-blur-sm">
