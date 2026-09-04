@@ -1,15 +1,14 @@
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { characters } from "../data";
 import { ArrowLeft, Shield, Sword, Zap, BookOpen, AlertTriangle } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export function CharacterDetail() {
   const { id } = useParams();
-  const navigate = useNavigate(); // 뒤로가기 스크롤 유지를 위한 함수 추가
+  const navigate = useNavigate();
   const character = characters.find((c) => c.id === id);
   const [showSecret, setShowSecret] = useState(false);
 
-  // Reset secret state when character changes
   useEffect(() => {
     setShowSecret(false);
   }, [id]);
@@ -27,7 +26,6 @@ export function CharacterDetail() {
 
   const statTotal = character.physical + character.defense + character.magic;
 
-  // StatBar 컴포넌트 수정: Tailwind가 색상을 인식할 수 있도록 명시적인 bgColor 속성 추가
   const StatBar = ({ label, value, icon: Icon, textColor, bgColor }: { label: string, value: number, icon: any, textColor: string, bgColor: string }) => (
     <div className="mb-4">
       <div className="flex justify-between items-center mb-1">
@@ -48,17 +46,15 @@ export function CharacterDetail() {
 
   return (
     <div className="max-w-4xl mx-auto space-y-6">
-      {/* Link 대신 button과 navigate(-1)을 사용하여 스크롤 위치 완벽 유지 */}
       <button 
         onClick={() => navigate(-1)}
-        className="inline-flex items-center gap-2 text-slate-500 hover:text-blue-600 transition-colors bg-transparent border-none p-0 cursor-pointer text-base"
+        className="inline-flex items-center gap-2 text-slate-500 hover:text-blue-600 transition-colors bg-transparent border-none p-0 cursor-pointer text-base font-medium"
       >
         <ArrowLeft className="w-4 h-4" />
         명부로 돌아가기
       </button>
 
       <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row">
-        {/* Profile Image (2:3 aspect ratio area) */}
         <div className="w-full md:w-2/5 lg:w-1/3 bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200">
           <div className="w-full aspect-[2/3] relative">
             <img
@@ -66,8 +62,6 @@ export function CharacterDetail() {
               alt={character.name}
               className="w-full h-full object-cover"
             />
-            
-            {/* Group Badge */}
             <div className="absolute top-4 right-4">
               <span className="px-3 py-1 bg-slate-900/80 text-white text-xs font-bold rounded-full backdrop-blur-sm">
                 {character.group}
@@ -76,7 +70,6 @@ export function CharacterDetail() {
           </div>
         </div>
 
-        {/* Info Content */}
         <div className="w-full md:w-3/5 lg:w-2/3 p-6 md:p-8 flex flex-col">
           <div className="flex justify-between items-start mb-6">
             <div>
@@ -139,7 +132,6 @@ export function CharacterDetail() {
 
           <div className="mt-auto pt-6 border-t border-slate-200">
             <h3 className="text-lg font-bold text-slate-800 mb-4">시뮬레이션 스탯</h3>
-            {/* 정직하게 색상 이름을 전부 적어주어 그래프 색상이 정상적으로 나오도록 수정 */}
             <StatBar label="물리력" value={character.physical} icon={Sword} textColor="text-red-500" bgColor="bg-red-500" />
             <StatBar label="방어력" value={character.defense} icon={Shield} textColor="text-blue-500" bgColor="bg-blue-500" />
             <StatBar label="마력" value={character.magic} icon={Zap} textColor="text-amber-500" bgColor="bg-amber-500" />
