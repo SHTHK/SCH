@@ -369,7 +369,7 @@ export const worldSettings: WorldSetting[] = [
 
 export const schedules = [
   { date: "상시", event: "기본 일정", description: "특별한 일정이 없는 날은 오전에 전투 훈련, 오후에 이론 수업을 진행한다." },
-  { date: "매주 금요일", event: "경쟁 훈련", description: "팀 결성이 가능하다. 팀과 팀이 경쟁하는 PVP식 훈련. 팀은 RPG게임의 '파티'의 개념이다." },
+  { date: "매주 금요일", event: "경쟁 훈련", description: "팀 결성이 가능하다. 팀과 팀이 경쟁하는 PVP식 훈련. 팀은 RPG게임의 '파티' 개념이다." },
   { date: "매주 토요일/일요일", event: "휴일", description: "특별한 일정이 없을 시 자유롭게 활동할 수 있다." },
   { date: "2월 28일", event: "입학식", description: "오리엔테이션과 첫 전투 시뮬레이션을 진행한다. 시뮬레이션 결과에 따라 반배정이 이루어진다." },
   { date: "3월 20일", event: "단체 봄나들이", description: "봄맞이 단체 외출." },
