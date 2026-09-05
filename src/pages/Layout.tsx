@@ -1,5 +1,4 @@
 import { Outlet, Link } from "react-router-dom";
-import { ScrollRestoration } from "react-router-dom";
 import { GraduationCap, Database, Users, Calendar } from "lucide-react";
 
 export function Layout() {
@@ -41,9 +40,6 @@ export function Layout() {
       <footer className="bg-slate-900 text-slate-400 py-6 text-center text-sm border-t border-slate-800">
         <p>© Central Boarding Academy. All Data Classified.</p>
       </footer>
-      
-      {/* ScrollRestoration ensures scroll position is maintained on back navigation */}
-      <ScrollRestoration />
     </div>
   );
 }
