@@ -9,7 +9,7 @@ export function World() {
           <Shield className="w-8 h-8 text-indigo-600" />
           세계관 설정
         </h1>
-        <p className="mt-2 text-slate-500">스토리의 배경이 되는 설정입니다.</p>
+        <p className="mt-2 text-slate-500">스토리의 배경이 되는 설정입니다. 제 다른 스토리챗인 U.S.P.C의 세계관 설명을 참고하시면 이해가 더 쉬우나, 꼭 볼 필요는 없습니다.</p>
       </div>
 
       <div className="grid gap-6">
