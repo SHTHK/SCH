@@ -1,58 +1,49 @@
-import { Link } from "react-router-dom";
-import { characters } from "../data";
-import { Users } from "lucide-react";
+import { Outlet, Link } from "react-router-dom";
+import { ScrollRestoration } from "react-router-dom";
+import { GraduationCap, Database, Users, Calendar } from "lucide-react";
 
-export function Characters() {
-  const groups = ["엘리트반", "상급반", "중급반", "초급반", "교사"];
-
+export function Layout() {
   return (
-    <div className="max-w-6xl mx-auto space-y-12">
-      <div className="border-b-2 border-slate-200 pb-6">
-        <h1 className="text-3xl font-extrabold text-slate-900 flex items-center gap-3">
-          <Users className="w-8 h-8 text-blue-600" />
-          학생 및 교직원 명부
-        </h1>
-        <p className="mt-2 text-slate-500">인물 프로필을 선택하여 상세 인적 사항을 열람하십시오.</p>
-      </div>
+    <div className="min-h-screen bg-slate-100 text-slate-900 font-sans break-keep flex flex-col">
+      <header className="bg-slate-900 text-white shadow-md sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 min-h-[4rem] flex items-center justify-between">
+          <Link to="/" className="flex items-center gap-1.5 sm:gap-2 hover:opacity-80 transition-opacity shrink-0 mr-2">
+            <GraduationCap className="w-6 h-6 sm:w-8 sm:h-8 text-amber-400 shrink-0" />
+            <div className="flex flex-col">
+              <h1 className="font-bold text-sm sm:text-lg leading-tight tracking-tight whitespace-nowrap">센트럴 기숙 학원</h1>
+              <p className="text-[8px] sm:text-[10px] text-slate-400 uppercase tracking-widest whitespace-nowrap">Central Boarding Academy</p>
+            </div>
+          </Link>
+          <nav className="flex gap-1 sm:gap-4 text-xs sm:text-sm font-medium flex-wrap justify-end sm:flex-nowrap">
+            <Link to="/characters" className="flex items-center gap-1 px-2 sm:px-3 py-2 rounded-md hover:bg-slate-800 transition-colors whitespace-nowrap">
+              <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span className="hidden sm:inline">학생/교사 인적사항</span>
+              <span className="sm:hidden">인물</span>
+            </Link>
+            <Link to="/world" className="flex items-center gap-1 px-2 sm:px-3 py-2 rounded-md hover:bg-slate-800 transition-colors whitespace-nowrap">
+              <Database className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span className="hidden sm:inline">통합 설정 데이터</span>
+              <span className="sm:hidden">세계관</span>
+            </Link>
+            <Link to="/schedule" className="flex items-center gap-1 px-2 sm:px-3 py-2 rounded-md hover:bg-slate-800 transition-colors whitespace-nowrap">
+              <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span className="hidden sm:inline">연간 학사 일정</span>
+              <span className="sm:hidden">일정</span>
+            </Link>
+          </nav>
+        </div>
+      </header>
 
-      <div className="space-y-12">
-        {groups.map((groupName) => {
-          const groupChars = characters.filter((c) => c.group === groupName);
-          if (groupChars.length === 0) return null;
+      <main className="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <Outlet />
+      </main>
 
-          return (
-            <section key={groupName} className="space-y-6">
-              <h2 className="text-2xl font-bold text-slate-800 flex items-center gap-2 border-l-4 border-amber-400 pl-3">
-                {groupName}
-              </h2>
-              
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                {groupChars.map((char) => (
-                  <Link
-                    key={char.id}
-                    to={`/characters/${char.id}`}
-                    className="group flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md border border-slate-200 overflow-hidden transition-all hover:-translate-y-1"
-                  >
-                    <div className="w-full aspect-square bg-slate-100 overflow-hidden relative">
-                      <img
-                        src={char.squareImageUrl ? `${char.squareImageUrl}` : `https://placehold.co/400x400/1e293b/ffffff?text=${encodeURIComponent(char.name)}`}
-                        alt={char.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </div>
-                    <div className="p-3 text-center">
-                      <h3 className="font-bold text-slate-900">{char.name}</h3>
-                      <p className="text-xs text-slate-500 mt-1">{char.className}</p>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          );
-        })}
-      </div>
+      <footer className="bg-slate-900 text-slate-400 py-6 text-center text-sm border-t border-slate-800">
+        <p>© Central Boarding Academy. All Data Classified.</p>
+      </footer>
+      
+      {/* ScrollRestoration ensures scroll position is maintained on back navigation */}
+      <ScrollRestoration />
     </div>
   );
 }
